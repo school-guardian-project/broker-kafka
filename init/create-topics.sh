@@ -11,7 +11,7 @@ done
 
 echo "Kafka está disponible."
 
-while IFS=: read -r topic partitions replication_factor
+while IFS=: read -r topic partitions replication_factor || [[ -n "$topic" ]]
 do
     # Ignorar líneas vacías y comentarios
     [[ -z "$topic" || "$topic" =~ ^# ]] && continue
