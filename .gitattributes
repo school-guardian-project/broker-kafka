@@ -1,0 +1,2 @@
+init/*.sh text eol=lf
+init/*.conf text eol=lf
